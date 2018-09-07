@@ -73,8 +73,8 @@
   
 
   
-  <link rel="alternate" href="https://merguerrero.github.io/index.xml" type="application/rss+xml" title="Academic">
-  <link rel="feed" href="https://merguerrero.github.io/index.xml" type="application/rss+xml" title="Academic">
+  <link rel="alternate" href="https://merguerrero.github.io/index.xml" type="application/rss+xml" title="Welcome to Mercedes Guerrero’s page! ">
+  <link rel="feed" href="https://merguerrero.github.io/index.xml" type="application/rss+xml" title="Welcome to Mercedes Guerrero’s page! ">
   
 
   <link rel="manifest" href="/site.webmanifest">
@@ -88,9 +88,9 @@
   <meta property="twitter:site" content="@https://twitter.com/MerGuMu">
   <meta property="twitter:creator" content="@https://twitter.com/MerGuMu">
   
-  <meta property="og:site_name" content="Academic">
+  <meta property="og:site_name" content="Welcome to Mercedes Guerrero’s page! ">
   <meta property="og:url" content="https://merguerrero.github.io/">
-  <meta property="og:title" content="Academic">
+  <meta property="og:title" content="Welcome to Mercedes Guerrero’s page! ">
   <meta property="og:description" content="Msc student of Omic data analysis">
   <meta property="og:locale" content="en-us">
   
@@ -101,7 +101,7 @@
 
   
 
-  <title>Academic</title>
+  <title>Welcome to Mercedes Guerrero’s page! </title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71" >
@@ -120,7 +120,7 @@
         <span class="icon-bar"></span>
       </button>
       
-      <a class="navbar-brand" href="/">Academic</a>
+      <a class="navbar-brand" href="/">Welcome to Mercedes Guerrero’s page! </a>
     </div>
 
     
@@ -398,6 +398,39 @@ url('https://merguerrero.github.io/img/headers/bubbles-wide.jpg');
           </a>
         </li>
         
+        
+        
+        
+          
+        
+        <li>
+          <a itemprop="sameAs" href="https://www.linkedin.com/in/mercedes-guerrero/" target="_blank" rel="noopener">
+            <i class="fab fa-linkedin big-icon"></i>
+          </a>
+        </li>
+        
+        
+        
+        
+          
+        
+        <li>
+          <a itemprop="sameAs" href="https://orcid.org/0000-0002-5556-2460" target="_blank" rel="noopener">
+            <i class="fab fa-orcid big-icon"></i>
+          </a>
+        </li>
+        
+        
+        
+        
+          
+        
+        <li>
+          <a itemprop="sameAs" href="https://stackoverflow.com/users/9691315/mercedes-gm?tab=profile" target="_blank" rel="noopener">
+            <i class="fab fa-fa-stack-overflow big-icon"></i>
+          </a>
+        </li>
+        
       </ul>
 
     </div>
@@ -420,11 +453,11 @@ url('https://merguerrero.github.io/img/headers/bubbles-wide.jpg');
         <h3>Interests</h3>
         <ul class="ul-interests">
           
-          <li>Artificial Intelligence</li>
+          <li>Bioinformatics</li>
           
-          <li>Computational Linguistics</li>
+          <li>Biostatistics</li>
           
-          <li>Information Retrieval</li>
+          <li>Genomics</li>
           
         </ul>
       </div>
@@ -438,24 +471,16 @@ url('https://merguerrero.github.io/img/headers/bubbles-wide.jpg');
           <li>
             <i class="fa-li fas fa-graduation-cap"></i>
             <div class="description">
-              <p class="course">PhD in Artificial Intelligence, 2012</p>
-              <p class="institution">Stanford University</p>
+              <p class="course">MSc in Omic data analysis, 2017</p>
+              <p class="institution">Universitat de Vic - Universitat central de Catalunya</p>
             </div>
           </li>
           
           <li>
             <i class="fa-li fas fa-graduation-cap"></i>
             <div class="description">
-              <p class="course">MEng in Artificial Intelligence, 2009</p>
-              <p class="institution">Massachusetts Institute of Technology</p>
-            </div>
-          </li>
-          
-          <li>
-            <i class="fa-li fas fa-graduation-cap"></i>
-            <div class="description">
-              <p class="course">BSc in Artificial Intelligence, 2008</p>
-              <p class="institution">Massachusetts Institute of Technology</p>
+              <p class="course">BSc in Biotechnology, 2012</p>
+              <p class="institution">Universitat de Vic - Universitat central de Catalunya</p>
             </div>
           </li>
           
@@ -1244,7 +1269,7 @@ url('https://merguerrero.github.io/img/headers/bubbles-wide.jpg');
 
     <div id="search-box">
       
-      <input name="q" id="search-query" placeholder="Search..." autocapitalize="off" autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+      
       
     </div>
 
@@ -1257,14 +1282,14 @@ url('https://merguerrero.github.io/img/headers/bubbles-wide.jpg');
 
 
 
-<script id="search-hit-fuse-template" type="text/x-template">
-  <div class="search-hit" id="summary-{{key}}">
+<script id="search-hit-algolia-template" type="text/html">
+  <div class="search-hit">
     <div class="search-hit-content">
       <div class="search-hit-name">
-        <a href="{{relpermalink}}">{{title}}</a>
-        <div class="article-metadata search-hit-type">{{type}}</div>
-        <p class="search-hit-description">{{snippet}}</p>
+        <a href="{{relpermalink}}">{{{_highlightResult.title.value}}}</a>
       </div>
+      <div class="article-metadata search-hit-type">{{type}}</div>
+      <p class="search-hit-description">{{{_highlightResult.summary.value}}}</p>
     </div>
   </div>
 </script>
@@ -1436,27 +1461,8 @@ url('https://merguerrero.github.io/img/headers/bubbles-wide.jpg');
     
 
     
-    
-    <script>
-      const search_index_filename = "/index.json";
-      const i18n = {
-        'placeholder': "Search...",
-        'no_results': "No results found"
-      };
-      const content_type = {
-        'post': "Posts",
-        'project': "Projects",
-        'publication' : "Publications",
-        'talk' : "Talks"
-        };
-    </script>
-    
 
     
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
-    <script src="/js/search.js"></script>
     
 
     
